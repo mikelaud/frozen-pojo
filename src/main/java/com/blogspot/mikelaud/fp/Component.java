@@ -2,7 +2,7 @@ package com.blogspot.mikelaud.fp;
 
 public interface Component {
 
-	interface Info { // POJO read-only
+	interface Info { // POJO read-only (frozen)
 		
 		int getId();
 		String getField();		
@@ -16,7 +16,7 @@ public interface Component {
 		void set(Info aInfo);
 	}
 	
-	interface Factory { // Component factory
+	interface Factory {
 		
 		Data getData();
 		Component create();
