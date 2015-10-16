@@ -16,7 +16,7 @@ public interface Component {
 		void set(Info aInfo);
 	}
 	
-	interface Factory { // POJO factory
+	interface Factory { // Component factory
 		
 		Data getData();
 		Component create();
